@@ -90,18 +90,56 @@ Illustrates how data flows from **source systems → bronze → silver → gold*
 3. Integrated into dimensions and facts in Gold layer
 
 ---
+## 🔗 Data Integration (CRM & ERP)
 
-### BI: Analytics & Reporting (Data Analysis)
+Explains how **business entities are integrated across systems**.
 
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
+📌 **Data Integration Diagram**  
+👉 <img src="docs/data_integration.png" >
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+### Key Integrations
+- **Customers** → CRM + ERP (demographics, location)
+- **Products** → CRM + ERP (categories, maintenance)
+- **Sales** → CRM transactions enriched with master data
+---
+## 🔧 ETL Methodology
 
-For more details, refer to [docs/requirements.md](docs/requirements.md).
+📌 **ETL Methods Diagram**  
+👉 <img src="docs/ETL.png" >
+
+### Extraction
+- Full & incremental extraction
+- File parsing (CSV)
+- Database querying
+
+### Transformation
+- Data cleansing
+- Normalization & standardization
+- Business rules
+- Aggregations
+- Derived columns
+
+### Load
+- Full load (Truncate & Insert)
+- Incremental load
+- Slowly Changing Dimensions (SCD 0, 1, 2)
+  
+---
+## 📘 Data Catalog
+
+Provides detailed metadata for **Gold Layer tables and columns**.
+
+📄 **Data Catalog Document**  
+👉 [📄 Open catalog](docs/data_catalog.md)
+
+---
+## 📐 Naming Conventions
+
+Ensures consistency across schemas, tables, and columns.
+
+📄 **Naming Conventions Guide**  
+👉 [📄 Open conversion rule](docs/naming_conversion.md)
+---
 
 ## 📂 Repository Structure
 ```
@@ -130,17 +168,22 @@ data-warehouse-project/
 └── requirements.txt                    # Dependencies and requirements for the project
 ```
 ---
+## 📊 Analytics & Consumption
 
-## ☕ Stay Connected
-
-
+The Gold layer supports:
+- 📈 BI dashboards (Power BI / Tableau)
+- 🔍 Ad-hoc SQL queries
+- 🤖 Machine learning use cases
+---
 
 ## 🛡️ License
 
-
+This project is licensed under the **MIT License**.  
+Free to use, modify, and distribute with attribution.
 
 ## 🌟 About Me
 
+**Azimuddin**  
+SQL | Data Warehousing | Analytics  | Data Engineer  
 
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/baraasalkini)
-[![Join](https://img.shields.io/badge/Join-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@datawithbaraa)
+> Built as a real-world, interview-ready Data Warehouse project.
