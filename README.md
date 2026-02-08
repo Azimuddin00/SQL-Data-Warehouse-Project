@@ -186,4 +186,3 @@ Free to use, modify, and distribute with attribution.
 **Azimuddin**  
 SQL | Data Warehousing | Analytics  | Data Engineer  
 
-> Built as a real-world, interview-ready Data Warehouse project.
